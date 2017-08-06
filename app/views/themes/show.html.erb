@@ -1,0 +1,15 @@
+<%= @theme.title %><br/>
+  <%= form_tag("/stages") %>
+  <%= hidden_field_tag "stage[password]", "1234" %>
+  <%= hidden_field_tag "stage[stage_num]", "1" %>
+  <%= select_tag "team_type", options_for_select(@players.collect {|p| [p.team_type, p.id]}) %>
+  <%= submit_tag "참여하기" %><br/>
+<%= link_to "Index", themes_path %>
+
+<script>
+  $(function() {
+    $(document).on('change', '#team_type', function() {
+      console.log($('#team_type option:selected').val());
+    })
+  })
+</script>

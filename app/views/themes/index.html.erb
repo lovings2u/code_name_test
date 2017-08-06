@@ -1,0 +1,5 @@
+<% @themes.each do |t| %>
+  <%= link_to "#{t.title}", theme_path(t) %> <br/>
+<% end %>
+
+<%= link_to "New", new_theme_path %>

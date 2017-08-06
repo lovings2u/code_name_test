@@ -1,0 +1,6 @@
+<%= @stage.stage_num %>
+<%= @current_player.stage_num %>
+<%= form_tag("/stages") %>
+<%= hidden_field_tag "stage[stage_num]", (@stage.stage_num+1) %>
+<%= password_field "stage", "password" %>
+<%= submit_tag "비밀번호 입력" %>

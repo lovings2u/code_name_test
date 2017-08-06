@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  theme_references: MyString
+  stage_num: 1
+  password: MyString
+  gps_x: 1.5
+  gps_y: 1.5
+  description: MyText
+  img_url: MyString
+
+two:
+  theme_references: MyString
+  stage_num: 1
+  password: MyString
+  gps_x: 1.5
+  gps_y: 1.5
+  description: MyText
+  img_url: MyString
